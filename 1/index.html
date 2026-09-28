@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      .header {
+        color: red;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header">Заголовок</h1>
+    <a href="/index.html">Главная</a>
+    <button class="button" id="button">Click me</button>
+    <div id="div"></div>
+    <script>
+      let a = 0;
+      const button = document.getElementById("button");
+      const elem = document.getElementById("div");
+      elem.textContent = a;
+      button.addEventListener("click", () => {
+        elem.textContent = ++a;
+      });
+    </script>
+    <input type="text" placeholder="Введите текст" />
+  </body>
+</html>
